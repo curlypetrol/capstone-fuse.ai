@@ -1,6 +1,3 @@
-# capstone-fuse.ai
-This repository will include all files for the final Capstone Project of the Fusemachines AI Microdegree 2023-2024 course.
-
 # Fetal Risk Classification using CTG Data: A Machine Learning Approach
 
 ![image](https://github.com/curlypetrol/capstone-fuse.ai/assets/114018163/2779e93b-7ade-4ba6-be5f-18e08bef9ac3)
