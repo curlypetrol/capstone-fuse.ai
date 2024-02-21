@@ -11,16 +11,16 @@ This repository will include all files for the final Capstone Project of the Fus
 The objective of this project is to develop and evaluate machine learning models for fetal risk classification using Cardiotocography (CTG) data. By leveraging various machine learning algorithms, the aim is to create a robust model that accurately predicts fetal health status, ultimately improving prenatal care.
 
 ## Table of Contents:
-#### 1. Introduction
-#### 2. Data Description
-#### 3. Data Preprocessing
-#### 4. Feature Engineering
-#### 5. Model Selection
-#### 6. Model Evaluation
-#### 7. Results
-#### 8. Conclusion
-#### 9. Future Work
-#### 10. References
+**1. Introduction**<br>
+**2. Data Description**<br>
+**3. Data Preprocessing**<br>
+**4. Feature Engineering**<br>
+**5. Model Selection**<br>
+**6. Model Evaluation**<br>
+**7. Results**<br>
+**8. Conclusion**<br>
+**9. Future Work**<br>
+**10. References**<br>
 
 ## 1. Introduction
 
