@@ -1,0 +1,15 @@
+name: capstone-project
+channels:
+  - defaults
+dependencies:
+  - ca-certificates
+  - ipykernel
+  - matplotlib
+  - numpy
+  - openssl
+  - python
+  - scipy
+  - pandas
+  - seaborn
+  - scikit-learn
+prefix: /home/joselier/miniconda3/envs/capstone-project
