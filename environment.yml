@@ -12,4 +12,6 @@ dependencies:
   - pandas
   - seaborn
   - scikit-learn
+  - pathlib
+  - pyprojroot
 prefix: /home/joselier/miniconda3/envs/capstone-project
