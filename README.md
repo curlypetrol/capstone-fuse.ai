@@ -54,7 +54,7 @@ In order to explore and verify the features and challenges within the dataset, t
 4. Scaling: Due to the significant scale differences among variables, scaling techniques were applied to ensure uniformity before model training. This step is crucial for maintaining model performance.
 5. Identifying Skewness: Examination of variable distributions revealed skewness, particularly right skewness, among certain variables. Skewness can impact model performance; hence, it was noted for further consideration.
 
-Exploratory Data Analysis (EDA):
+### Exploratory Data Analysis (EDA):
 
 1. **Histogram Visualization:** Histograms were created to visualize the distribution of variables. Skewness and normal-like distributions among features were observed.
 2. **Class Imbalance Check:** Class imbalance within the target variable (fetal_health) was identified, with a substantial difference in instances among the "normal," "suspect," and "pathological" categories. Addressing this imbalance is crucial for model training.
