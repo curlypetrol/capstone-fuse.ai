@@ -1,3 +1,10 @@
+### Start the project
+
+Create a conda environment based on the environment file at the root of the project.
+```
+conda env create --file environment.yml
+```
+
 # Fetal Risk Classification using CTG Data: A Machine Learning Approach
 
 ![image](https://github.com/curlypetrol/capstone-fuse.ai/assets/114018163/2779e93b-7ade-4ba6-be5f-18e08bef9ac3)
