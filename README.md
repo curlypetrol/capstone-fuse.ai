@@ -18,8 +18,8 @@ The objective of this project is to develop and evaluate machine learning models
 1. [**Introduction**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#1-introduction)<br>
 2. [**Data Description**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#2-data-description)<br>
 3. [**Data Preprocessing**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#3-data-preprocessing)<br>
-4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai/blob/main/README.md#5-model-selection)<br>
-5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#6-model-evaluation)<br>
+4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#4-model-selection)<br>
+5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#5-model-evaluation)<br>
 **6. Results**<br>
 **7. Conclusion**<br>
 **8. Future Work**<br>
@@ -72,7 +72,7 @@ In order to explore and verify the features and challenges within the dataset, t
 
 These preprocessing steps lay the foundation for building robust machine learning models for fetal health classification, ensuring data quality, uniformity, and relevance.
 
-## 5. Model Selection
+## 4. Model Selection
 
 ### Selected Metrics
 Given the objective of building a sickness prediction model, priority is given to identifying cases representing sickness presence. Hence, special attention is paid to the recall metric of the classes representing or indicating sickness, namely 'suspect' and 'pathological'.
@@ -86,7 +86,7 @@ Hyperparameters of ML models such as Logistic Regression and Random Classifier a
 
 Parameter grids are selected considering training time (around 20 minutes), feasible parameter combinations (less than 500), and metric maximization. The final selection of parameter grids is the culmination of research, recommendations from experts, and experimentation to ensure optimal performance.
 
-## 6. Model Evaluation
+## 5. Model Evaluation
 
 ### Evaluation Approach
 Final evaluation of the performance of selected ML models is conducted through ten-fold cross-validation with the test data partition. This ensures precise model evaluation independent of random data partition configurations that may skew scores. These results are utilized for final model comparison. We outlined our model evaluation approach for fetal health assessment, covering data preprocessing, model training, evaluation, and model storage, the following steps were the roadmap undertaken to determine our baseline metrics using a Dummy Classifier:
@@ -114,10 +114,10 @@ The final model evaluated is an Artificial Neural Network (ANN) implemented with
 
 This architecture was determined through extensive research on similar projects and expert recommendations. The model runs for a total of 120 epochs. Also, the model with the highest recall on the 'Pathological' class is saved using the callback ModelCheckpoint, ensuring the highest possible sickness detection.
 
-## 7. Results
+## 6. Results
 
-## 8. Conclusion
+## 7. Conclusion
 
-## 9. Future Work
+## 8. Future Work
 
-## 10. References
+## 9. References
