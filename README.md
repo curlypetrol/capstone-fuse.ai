@@ -19,7 +19,7 @@ The objective of this project is to develop and evaluate machine learning models
 2. [**Data Description**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#2-data-description)<br>
 3. [**Data Preprocessing**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#3-data-preprocessing)<br>
 4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai/blob/main/README.md#5-model-selection)<br>
-5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai/edit/main/README.md#6-model-evaluation)<br>
+5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#6-model-evaluation)<br>
 **6. Results**<br>
 **7. Conclusion**<br>
 **8. Future Work**<br>
