@@ -18,13 +18,12 @@ The objective of this project is to develop and evaluate machine learning models
 1. [**Introduction**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#1-introduction)<br>
 2. [**Data Description**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#2-data-description)<br>
 3. [**Data Preprocessing**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#3-data-preprocessing)<br>
-**4. Feature Engineering**<br>
-**5. Model Selection**<br>
-**6. Model Evaluation**<br>
-**7. Results**<br>
-**8. Conclusion**<br>
-**9. Future Work**<br>
-**10. References**<br>
+4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai/blob/main/README.md#5-model-selection)<br>
+5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai/edit/main/README.md#6-model-evaluation)<br>
+**6. Results**<br>
+**7. Conclusion**<br>
+**8. Future Work**<br>
+**9. References**<br>
 
 ## 1. Introduction
 Reducing child mortality rates stands as a paramount objective within the global health agenda, intricately linked with the United Nations' Sustainable Development Goals. By 2030, nations aspire to eradicate preventable deaths among newborns and children under the age of five, striving to diminish under‑5 mortality to as low as 25 per 1,000 live births. Concurrently, maternal mortality remains a concerning issue, claiming 295,000 lives during and post-pregnancy in 2017, with the majority transpiring in low-resource settings and often preventable.
@@ -73,12 +72,47 @@ In order to explore and verify the features and challenges within the dataset, t
 
 These preprocessing steps lay the foundation for building robust machine learning models for fetal health classification, ensuring data quality, uniformity, and relevance.
 
-
-## 4. Feature Engineering
-
 ## 5. Model Selection
 
+### Selected Metrics
+Given the objective of building a sickness prediction model, priority is given to identifying cases representing sickness presence. Hence, special attention is paid to the recall metric of the classes representing or indicating sickness, namely 'suspect' and 'pathological'.
+
+Balanced accuracy is crucial due to the issue of imbalanced classes. It calculates the average recall obtained on each class, serving as our main metric for model optimization.
+
+The averaging method used for combining metrics across classes is Macro-averaging, assigning equal importance to all labels regardless of their distribution.
+
+### Hyperparameter Optimization in ML models
+Hyperparameters of ML models such as Logistic Regression and Random Classifier are optimized based on their balanced accuracy to maximize performance. The best model is saved for further rigorous evaluation.
+
+Parameter grids are selected considering training time (around 20 minutes), feasible parameter combinations (less than 500), and metric maximization. The final selection of parameter grids is the culmination of research, recommendations from experts, and experimentation to ensure optimal performance.
+
 ## 6. Model Evaluation
+
+### Evaluation Approach
+Final evaluation of the performance of selected ML models is conducted through ten-fold cross-validation with the test data partition. This ensures precise model evaluation independent of random data partition configurations that may skew scores. These results are utilized for final model comparison. We outlined our model evaluation approach for fetal health assessment, covering data preprocessing, model training, evaluation, and model storage, the following steps were the roadmap undertaken to determine our baseline metrics using a Dummy Classifier:
+
+- **Baseline Metric Estimation:**<br>
+  We initiate the evaluation process by preparing the dataset for model training. Data preprocessing involves importing essential libraries and standardizing the features using StandardScaler. Additionally, we define metrics to assess model performance, considering the 
+  imbalanced nature of the target variable.
+
+- **Model Training:**<br>
+  To optimize our models, hyperparameters are tuned using GridSearchCV, which performs an exhaustive search over specified parameter values while optimizing the specified metric, balanced accuracy. The best performing model is selected based on the evaluation results.
+
+-  **Evaluation:**<br>
+   We rigorously evaluate the selected model using cross-validation to ensure precise performance evaluation, independent of random data partitions that may influence metrics. Baseline metrics are established using a dummy classifier that predicts the most frequent 
+   class.
+
+- **Saving the Best Model:**<br>
+  Finally, the best-performing model is saved using the pickle library for future use and deployment.
+
+### Artificial Neural Network Architecture
+The final model evaluated is an Artificial Neural Network (ANN) implemented with the TensorFlow library. It features an architecture comprising three hidden layers with a Rectified Linear Unit (ReLU) activation function. Several techniques are employed to achieve faster convergence and prevent overfitting:
+
+- Batch normalization: Re-centers and re-scales inputs at each hidden layer, enhancing training speed and maintaining a stable input distribution across layers.
+- Dropout layers: Two dropout layers with a rate of 20% are added to reduce overfitting.
+- L2 regularization: Applied in each hidden layer to further mitigate overfitting.
+
+This architecture was determined through extensive research on similar projects and expert recommendations. The model runs for a total of 120 epochs. Also, the model with the highest recall on the 'Pathological' class is saved using the callback ModelCheckpoint, ensuring the highest possible sickness detection.
 
 ## 7. Results
 
