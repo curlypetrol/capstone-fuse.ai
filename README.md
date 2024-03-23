@@ -21,9 +21,9 @@ The objective of this project is to develop and evaluate machine learning models
 4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#4-model-selection)<br>
 5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#5-model-evaluation)<br>
 6. [**Results**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#6-results)<br>
-**7. Conclusion**<br>
-**8. Knowledge Gained and Next Steps**<br>
-**9. References**<br>
+7. [**Conclusion**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#7-conclusion)<br>
+8. [**Knowledge Gained and Next Steps**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#8-knowledge-gained-and-next-steps)<br>
+9. [**References**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#9-references)<br>
 
 ## 1. Introduction
 Reducing child mortality rates stands as a paramount objective within the global health agenda, intricately linked with the United Nations' Sustainable Development Goals. By 2030, nations aspire to eradicate preventable deaths among newborns and children under the age of five, striving to diminish under‑5 mortality to as low as 25 per 1,000 live births. Concurrently, maternal mortality remains a concerning issue, claiming 295,000 lives during and post-pregnancy in 2017, with the majority transpiring in low-resource settings and often preventable.
@@ -157,3 +157,16 @@ In comparing the performance of the three models, Logistic Regression served as 
 Through this project, valuable insights were gained into machine learning models for fetal health classification. Moving forward, exploring advanced deep learning architectures, ensemble methods, and feature engineering techniques could further enhance classification accuracy. Additionally, conducting experiments with larger datasets and incorporating domain knowledge could provide deeper insights into fetal health assessment.
 
 ## 9. References
+
+Early Diagnosis and Classification of Fetal Health Status from a Fetal Cardiotocography Dataset Using Ensemble Learning:<br>
+[National Library of Medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10417593/)
+
+Comparison of machine learning algorithms to classify fetal health using cardiotocogram data:<br>
+[Science Direct](https://www.sciencedirect.com/science/article/pii/S1877050921023541)
+
+Diagnosis and Classification of Fetal Health Based on CTG Data Using Machine Learning Techniques:<br>
+[Springer Link](https://link.springer.com/chapter/10.1007/978-3-031-34622-4_1)
+
+Using Machine Learning to Classify Human Fetal Health and Analyze Feature Importance:<br>
+[MDPI](https://www.mdpi.com/2673-7426/3/2/19)
+
