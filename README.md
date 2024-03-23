@@ -1,4 +1,4 @@
-### Start the project
+  ### Start the project
 
 Create a conda environment based on the environment file at the root of the project.
 ```
@@ -20,9 +20,9 @@ The objective of this project is to develop and evaluate machine learning models
 3. [**Data Preprocessing**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#3-data-preprocessing)<br>
 4. [**Model Selection**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#4-model-selection)<br>
 5. [**Model Evaluation**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#5-model-evaluation)<br>
-**6. Results**<br>
+6. [**Results**](https://github.com/curlypetrol/capstone-fuse.ai?tab=readme-ov-file#6-results)<br>
 **7. Conclusion**<br>
-**8. Future Work**<br>
+**8. Knowledge Gained and Next Steps**<br>
 **9. References**<br>
 
 ## 1. Introduction
@@ -116,8 +116,44 @@ This architecture was determined through extensive research on similar projects 
 
 ## 6. Results
 
+In our project on Fetal Health Classification, we deployed three distinct models: Logistic Regression, Random Forest, and Neural Network, to classify fetal health conditions. Each model underwent rigorous data preprocessing, training, and evaluation processes to achieve accurate predictions and robust performance.
+
+### Logistic Regression Classifier:
+- Preprocessed dataset by splitting into training and testing sets and standard scaling features.
+- Trained model using grid search with cross-validation to find optimal hyperparameters.
+- Achieved performance metrics:
+    1. Balanced Accuracy: ~68.60%
+    2. Precision: Ranged from 60% to 82% for different health classes
+    3. F1-Score: ~69.75%
+    4. Accuracy: ~86.64%
+- Provided detailed classification report showcasing model performance across health categories.
+
+### Random Forest Classifier:
+- Employed Random Forest, a robust ensemble learning technique.
+- Conducted hyperparameter tuning using GridSearchCV.
+- Achieved promising performance metrics:
+    1. Accuracy: ~88.27%
+    2. Balanced Accuracy: ~71.82%
+    3. Precision: ~84.46%, ~66%, and ~87% for 'Normal', 'Suspect', and 'Pathological' classes respectively.
+    4. F1-Score: ~75.10%
+- Demonstrated strong performance in accurately predicting 'Normal' class while maintaining satisfactory performance for 'Suspect' and 'Pathological' classes.
+
+### Neural Network Classifier:
+- Developed a Neural Network architecture using TensorFlow library.
+- Preprocessed data by splitting into training, testing, and validation sets and standard scaling features.
+- Achieved impressive performance metrics:
+    1. Balanced Accuracy: ~92.11%
+    2. Categorical Accuracy: ~92.49%
+    3. F1-Score: ~85.16%
+    4. Loss: ~0.192
+- Demonstrated robust performance in accurately classifying fetal health conditions across different health categories.
+
 ## 7. Conclusion
 
-## 8. Future Work
+In comparing the performance of the three models, Logistic Regression served as a foundational approach, offering initial insights but demonstrating relatively lower performance metrics. On the other hand, the Random Forest model surpassed Logistic Regression, demonstrating robust performance across various evaluation metrics. However, the Neural Network emerged as the standout performer, showcasing superior accuracy and predictive capability, thus highlighting its effectiveness in accurately classifying fetal health conditions.
+
+## 8. Knowledge Gained and Next Steps
+
+Through this project, valuable insights were gained into machine learning models for fetal health classification. Moving forward, exploring advanced deep learning architectures, ensemble methods, and feature engineering techniques could further enhance classification accuracy. Additionally, conducting experiments with larger datasets and incorporating domain knowledge could provide deeper insights into fetal health assessment.
 
 ## 9. References
